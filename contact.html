@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 | Ohmycrunch</title>
+    <meta name="description" content="联系 Ohmycrunch——通过 WhatsApp、邮件或表单与我们取得联系。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo"><img src="images/ohmycrunch.jpeg" alt="Ohmycrunch Logo" class="logo-img" style="height:40px;width:auto;max-height:40px;object-fit:contain;display:block;">Ohmycrunch</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">主页</a></li>
+                <li><a href="/about">关于</a></li>
+                <li><a href="/products">产品</a></li>
+                <li><a href="/reviews">用户反馈</a></li>
+                <li><a href="/contact" class="active">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <p>我们期待听到您的声音</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon peanut-bg">💬</div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/60146859862" target="_blank">+60 14-685 9862</a>
+                            <p style="font-size:0.85rem;color:var(--text-light);margin-top:4px;">最快回复方式</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon pistachio-bg">📧</div>
+                        <div>
+                            <h4>电子邮件</h4>
+                            <a href="mailto:hello@ohmycrunch.com">hello@ohmycrunch.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon peanut-bg">📍</div>
+                        <div>
+                            <h4>地址</h4>
+                            <p>43300, Seri Kembangan, Selangor, Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon pistachio-bg">🕐</div>
+                        <div>
+                            <h4>营业时间</h4>
+                            <p>周一至周五: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:16px;">📦</div>
+                    <h3 style="margin-bottom:12px;font-size:1.4rem;color:var(--text-dark);">全马邮寄服务</h3>
+                    <p style="color:var(--text-medium);font-size:1.05rem;line-height:1.8;">支持西马 & 东马邮寄，订单确认后 <strong style="color:var(--peanut-dark);">3-7 个工作日</strong>内发货。</p>
+                    <div style="margin-top:24px;padding-top:24px;border-top:1px solid #E8E8E8;">
+                        <p style="color:var(--text-light);font-size:0.9rem;margin-bottom:12px;">下单方式</p>
+                        <a href="https://wa.me/60146859862?text=你好，我想下单" class="btn btn-primary" style="width:100%" target="_blank">💬 WhatsApp 下单</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><img src="images/ohmycrunch.jpeg" alt="Ohmycrunch Logo" class="logo-img" style="height:40px;width:auto;max-height:40px;object-fit:contain;display:block;">Ohmycrunch</a>
+                    <p>马来西亚手工坚果抹酱品牌，致力于为您提供最纯正的天然坚果风味。</p>
+                </div>
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <ul>
+                        <li><a href="/">主页</a></li>
+                        <li><a href="/about">关于</a></li>
+                        <li><a href="/products">产品</a></li>
+                        <li><a href="/contact">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>更多</h4>
+                    <ul>
+                        <li><a href="/reviews">用户反馈</a></li>
+                        <li><a href="/blog">博客</a></li>
+                        <li><a href="/privacy">隐私政策</a></li>
+                        <li><a href="/terms">条件与条款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>联系</h4>
+                    <ul>
+                        <li><a href="https://wa.me/60146859862" target="_blank">WhatsApp</a></li>
+                        <li><a href="/contact">发送邮件</a></li>
+                        <li><a href="/contact">到访我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Ohmycrunch. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/60146859862" class="whatsapp-float" target="_blank" title="WhatsApp 联系我们">💬</a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
