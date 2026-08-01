@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到 | Ohmycrunch</title>
+    <meta name="description" content="抱歉，您访问的页面不存在。返回 Ohmycrunch 首页探索我们的手工坚果抹酱。">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 24px;
+            background: var(--bg-light);
+        }
+        .error-content {
+            max-width: 500px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--peanut);
+            line-height: 1;
+            margin-bottom: 16px;
+            letter-spacing: -4px;
+        }
+        .error-code span {
+            color: var(--pistachio);
+        }
+        .error-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+        .error-desc {
+            font-size: 1.05rem;
+            color: var(--text-medium);
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .error-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 5.5rem;
+            }
+            .error-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/ohmycrunch.jpeg" alt="Ohmycrunch Logo" class="logo-img" style="height:40px;width:auto;max-height:40px;object-fit:contain;display:block;">Ohmycrunch</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="reviews.html">用户反馈</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="error-section">
+        <div class="error-content">
+            <div class="error-code">4<span>0</span>4</div>
+            <h1 class="error-title">页面未找到</h1>
+            <p class="error-desc">抱歉，您访问的页面不存在或已被移除。<br>让我们带您回到美味的世界。</p>
+            <div class="error-buttons">
+                <a href="/" class="btn btn-primary">🏠 返回首页</a>
+                <a href="/products" class="btn btn-outline">🥜 浏览产品</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="images/ohmycrunch.jpeg" alt="Ohmycrunch Logo" class="logo-img" style="height:40px;width:auto;max-height:40px;object-fit:contain;display:block;">Ohmycrunch</a>
+                    <p>马来西亚手工坚果抹酱品牌，致力于为您提供最纯正的天然坚果风味。</p>
+                </div>
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="products.html">产品</a></li>
+                        <li><a href="contact.html">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>更多</h4>
+                    <ul>
+                        <li><a href="reviews.html">用户反馈</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                        <li><a href="terms.html">条件与条款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>联系</h4>
+                    <ul>
+                        <li><a href="https://wa.me/60146859862" target="_blank">WhatsApp</a></li>
+                        <li><a href="contact.html">发送邮件</a></li>
+                        <li><a href="contact.html">到访我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Ohmycrunch. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/60146859862" class="whatsapp-float" target="_blank" title="WhatsApp 联系我们">💬</a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
